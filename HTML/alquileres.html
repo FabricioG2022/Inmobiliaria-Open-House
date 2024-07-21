@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../IMAGENES/klipartz.com%20(37).png" type="image/x-icon">
+    <title>Open House</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li class="underline"><a href="../HTML/index.html">HOME</a></li>
+                <li><a href="../HTML/alquileres.html">ALQUILERES</a></li>
+                <li><a href="../HTML/ventas.html">VENTAS</a></li>
+                <li><a href="../HTML/quienesSomos.html">QUIENES SOMOS</a></li>
+                <li><a href="../HTML/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="encabezado">
+        <ul>
+            <li><img src="../IMAGENES/slider1.jpg" alt=""></li>
+            <li><img src="../IMAGENES/slider2.jpg" alt=""></li>
+            <li><img src="../IMAGENES/slider3.jpg" alt=""></li>
+            <li><img src="../IMAGENES/slider4.jpg" alt=""></li>
+        </ul>
+        <h1>INMOBILIARIA OPEN HOUSE</h1>
+        <a href="../HTML/index.html"><img src="../IMAGENES/klipartz.com%20(52).png" alt="Manos sosteniendo una casa"></a>
+    </div>
+    <div class="container3">
+        <div class="buscador">
+            <h3>PROPIEDADES EN ALQUILER</h3>
+            <form action="#">
+
+                <p>Tipo de propiedad
+                    <select class="selectPropiedad" name="propiedad">
+                        <option value="">&nbsp;</option>
+                        <option value="">Casas</option>
+                        <option value="">Departamentos</option>
+                        <option value="">Cocheras</option>
+                        <option value="">Terrenos</option>
+                        <option value="">Galpones</option>
+                        <option value="">Cocheras</option>
+                        <option value="">Oficinas</option>
+                        <option value="">Locales</option>
+                        <option value="">Phs</option>
+                        <option value="">Depositos</option>
+                    </select>
+                </p>
+                <p>Ubicacion
+                    <select class="selectUbicacion" name="ubicacion">
+                        <option selected value="">&nbsp;</option>
+                        <option value="">Mar del plata</option>
+                        <option value="">Mar chiquita</option>
+                        <option value="">Santa Clara</option>
+                        <option value="">Pinamar</option>
+                        <option value="">Miramar</option>
+                        <option value="">San clemente</option>
+                        <option value="">Buenos aires</option>
+                    </select>
+                </p>
+                <p>Cantidad de ambientes
+                    <select class="selectAmbientes" name="ambientes">
+                        <option selected value="">&nbsp;</option>
+                        <option value="">1 Monoambiente</option>
+                        <option value="">2 ambientes</option>
+                        <option value="">3 ambientes</option>
+                        <option value="">4 ambientes</option>
+                        <option value="">5 ambientes</option>
+                        <option value="">6+ ambientes</option>
+                    </select>
+                </p>
+                <p>Antiguedad
+                    <select class="selectAntiguedad" name="antiguedad">
+                        <option selected value="">&nbsp;</option>
+                        <option value="">En construccion</option>
+                        <option value="">A estrenar</option>
+                        <option value="">Entre 1 y 5 años</option>
+                        <option value="">Entre 5 y 15 años</option>
+                        <option value="">Entre 15 y 25 años</option>
+                        <option value="">Entre 25 y 35 años</option>
+                        <option value="">Entre 35 y 50 años</option>
+                        <option value="">Mas de 50 años</option>
+                    </select>
+                </p>
+                <p>Superficie cubierta
+                    <select class="selectSuperficie" name="superficie">
+                        <option selected value="">&nbsp;</option>
+                        <option value="">Hasta 30m2</option>
+                        <option value="">Desde 30m2 a 50m2</option>
+                        <option value="">Desde 50m2 a 70m2</option>
+                        <option value="">Desde 70m2 a 90m2</option>
+                        <option value="">Desde 90m2 a 120m2</option>
+                        <option value="">Desde 120m2 a 150m2</option>
+                        <option value="">Desde 150m2 a 180m2</option>
+                        <option value="">Desde 180m2 a 200m2</option>
+                        <option value="">Mas de 200m2</option>
+                    </select>
+                </p>
+                <p>Caracteristicas
+                    <select class="selectCaracteristicas" name="caracteristicas">
+                        <option selected value="">&nbsp;</option>
+                        <option value="">Agua corriente</option>
+                        <option value="">Gas natural</option>
+                        <option value="">Internet</option>
+                        <option value="">Electricidad</option>
+                        <option value="">Pavimento</option>
+                        <option value="">Telefono</option>
+                        <option value="">Cable</option>
+                        <option value="">Aire acondicionado</option>
+                        <option value="">Alarma</option>
+                        <option value="">Amoblado</option>
+                        <option value="">Calefaccion</option>
+                        <option value="">Gimnasio</option>
+                        <option value="">Hidromasaje</option>
+                        <option value="">Parrilla</option>
+                        <option value="">Quincho</option>
+                        <option value="">Solarium</option>
+                        <option value="">Sum</option>
+                        <option value="">Apto mascotas</option>
+                        <option value="">Pileta</option>
+                        <option value="">Seguridad privada</option>
+                        <option value="">Videocamaras</option>
+                    </select>
+                </p>
+                <div class="precios">
+                    <p> Precios
+                        <label for="dolar">U$S</label>
+                        <input type="radio" name="moneda" id="dolar">
+                        <label for="pesos">Pesos</label>
+                        <input type="radio" name="moneda" id="pesos">
+                    </p>
+                    <div class="inputDesdeH">
+                        <input type="number" name="desde" id="desde" placeholder="Desde">
+                        <input type="number" name="hasta" id="hasta" placeholder="Hasta">
+                    </div>
+                    <div class="ButtonAplicar">
+                        <input type="submit" value="APLICAR">
+                    </div>
+                </div>
+            </form>
+            <img src="../IMAGENES/klipartz.com%20(49).png" alt="Icono de casa con signo de pregunta">
+        </div>
+        <div class="deptos">
+            <div class="imagen1">
+                <img alt="Departamento moderno" height="198" onmouseout="this.src='../IMAGENES/DeptoInt1.webp';"
+                    onmouseover="this.src='../IMAGENES/DeptoInt2.webp';" src='../IMAGENES/DeptoInt1.webp'>
+                <p class="imagen1Texto">
+                    Departamento de 2 ambientes, zona centro
+                </p>
+            </div>
+            <div class="imagen2">
+                <img alt="Departamento pequeño moderno" height="198" onmouseout="this.src='../IMAGENES/DeptoInt3.webp';"
+                    onmouseover="this.src='../IMAGENES/DeptoInt4.webp';" src='../IMAGENES/DeptoInt3.webp'>
+                <p class="imagen2Texto">
+                    Departamento a estrenar, zona centro
+                </p>
+            </div>
+            <div class="imagen3">
+                <img alt="Departamento a estrenar, nuevo" height="198"
+                    onmouseout="this.src='../IMAGENES/DeptoInt6.jpg';"
+                    onmouseover="this.src='../IMAGENES/DeptoInt5.jpg';" src='../IMAGENES/DeptoInt6.jpg'>
+                <p class="imagen3Texto">
+                    Departamento 3 ambientes, zona sur
+                </p>
+            </div>
+            <div class="imagen4">
+                <img alt="Departamento lujoso" height="198" onmouseout="this.src='../IMAGENES/DeptoInt7.jpg';"
+                    onmouseover="this.src='../IMAGENES/DeptoInt8.jpg';" src='../IMAGENES/DeptoInt7.jpg'>
+                <p class="imagen4Texto">
+                    Departamento 4 ambientes, Olivos
+                </p>
+            </div>
+            <div class="imagen5">
+                <img alt="Amplia cochera para varios autos" height="198"
+                    onmouseout="this.src='../IMAGENES/CocheraInt1.jpg';"
+                    onmouseover="this.src='../IMAGENES/CocheraInt2.jpg';" src='../IMAGENES/CocheraInt1.jpg'>
+                <p class="imagen5Texto">
+                    Cochera, amplio espacio, Centro
+                </p>
+            </div>
+        </div>
+        <div class="deptos2">
+            <div class="imagen6">
+                <img alt="Casa dos plantas, color blanco" height="198" onmouseout="this.src='../IMAGENES/Casa1.jpg';"
+                    onmouseover="this.src='../IMAGENES/casaInterior5.jpg';" src='../IMAGENES/Casa1.jpg'>
+                <p class="imagen6Texto">
+                    Casa 4 ambientes, Villa Luro
+                </p>
+            </div>
+            <div class="imagen7">
+                <img alt="Casa con ladrillos a la vista" height="198" onmouseout="this.src='../IMAGENES/Casa2.jpg';"
+                    onmouseover="this.src='../IMAGENES/casaInterior6.jpg';" src='../IMAGENES/Casa2.jpg'>
+                <p class="imagen7Texto">
+                    Casa 3 ambientes, Banfield
+                </p>
+            </div>
+            <div class="imagen8">
+                <img alt="Casa estilo colonial" height="198" onmouseout="this.src='../IMAGENES/casa-3.webp';"
+                    onmouseover="this.src='../IMAGENES/casaInterior7.jpg';" src='../IMAGENES/casa-3.webp'>
+                <p class="imagen8Texto">
+                    Casa 3 ambientes, Quilmes
+                </p>
+            </div>
+            <div class="imagen9">
+                <img alt="Casa doble planta con piedras" height="198" onmouseout="this.src='../IMAGENES/Casa4.jpg';"
+                    onmouseover="this.src='../IMAGENES/casaInterior8.jpg';" src='../IMAGENES/Casa4.jpg'>
+                <p>
+                    Casa dos plantas, a estrenar, zona norte
+                </p>
+            </div>
+            <div class="imagen10">
+                <img alt="Cochera con amplio espacio" height="198" onmouseout="this.src='../IMAGENES/CocheraInt3.jpg';"
+                    onmouseover="this.src='../IMAGENES/CocheraInt4.jpg';" src='../IMAGENES/CocheraInt3.jpg'>
+                <p class="imagen10Texto">
+                    Cochera, Parque Patricios
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="seguinos">
+                <h3>SEGUINOS</h3>
+                <a href="#" target="_blank" rel="noreferrer noopener"><img src="../IMAGENES/klipartz.com%20(45).png"
+                        alt="Icono Whattsapp"></a>
+                <a href="#" target="_blank" rel="noreferrer noopener"><img src="../IMAGENES/klipartz.com%20(44).png"
+                        alt="Icono Instagram"></a>
+                <a href="#" target="_blank" rel="noreferrer noopener"><img src="../IMAGENES/klipartz.com%20(43).png"
+                        alt="Icono Facebook"></a>
+            </div>
+            <div class="secciones">
+                <h3>SECCIONES</h3>
+                <ul>
+                    <li><a href="../HTML/index.html">Inicio</a></li>
+                    <li><a href="../HTML/quienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="../HTML/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="contactenos">
+                <h3>CONTACTENOS</h3>
+                <p class="p1">Av Colon 3800</p>
+                <img src="../IMAGENES/klipartz.com%20(42).png" alt="Simbolo telefono">
+                <p class="p2">1145678910</p>
+            </div>
+            <div class="buscando">
+                <h3>QUE ESTAS BUSCANDO?</h3>
+                <ul>
+                    <li>Casas</li>
+                    <li>Departamentos</li>
+                    <li>Cocheras</li>
+                    <li>Terrenos</li>
+                    <li>Galpones</li>
+                    <li>Oficinas</li>
+                    <li>Locales</li>
+                    <li>Phs</li>
+                    <li>Depositos</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
